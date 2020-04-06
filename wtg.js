@@ -39,11 +39,11 @@ app.get('/RSS', function(req, res) {
 							var day = r.date.substring(6,8)
 							var hour = r.date.substring(8,10)
 							var min = r.date.substring(10,12)
-							console.log(year+month+day+hour+min)
-							console.log(new Date(2020, 04, 06, 11, 00))
+							//console.log(year+month+day+hour+min)
+							//console.log(new Date(2020, 04, 06, 11, 00))
 
 							data += comma + "[new Date("+year+","+month+"-1,"+day+","+hour+","+min+"),"+r.temp+"]"
-							console.log(data)
+							//console.log(data)
 
 							comma = ","
 						}
